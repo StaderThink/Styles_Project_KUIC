@@ -1,0 +1,7 @@
+.button {
+    &.is-primary {
+        &.is-inverted {
+            background-color: #222;
+        }
+    }
+}
