@@ -5,8 +5,8 @@
   "main": "index.scss",
   "scripts": {
     "watch": "npm run build -- --watch",
-    "build": "node-sass index.scss docs/dist/index.css --source-map true --output-style expanded",
-    "compress": "node-sass index.scss docs/dist/index.min.css --output-style compressed",
+    "build": "sass index.scss docs/dist/index.css --style=expanded",
+    "compress": "sass index.scss docs/dist/index.min.css --no-source-map --style=compressed",
     "dist": "npm run build && npm run compress"
   },
   "repository": {
@@ -26,6 +26,6 @@
   "homepage": "https://github.com/kuic-sena/estilos#readme",
   "dependencies": {
     "bulma": "^0.9.0",
-    "node-sass": "^4.14.1"
+    "sass": "^1.26.10"
   }
 }
